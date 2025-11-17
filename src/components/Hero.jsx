@@ -6,11 +6,12 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Drive Your Dream Car{' '}
+                Drive Your Dream Car{" "}
                 <span className="text-blue-600">Today</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Discover premium vehicles at your fingertips. From luxury sedans to sporty convertibles, find the perfect ride for any occasion.
+                Discover premium vehicles at your fingertips. From luxury sedans
+                to sporty convertibles, find the perfect ride for any occasion.
               </p>
             </div>
 
@@ -51,13 +52,27 @@ export function Hero() {
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">Instant Booking</div>
-                  <div className="text-sm text-gray-600">Book in 60 seconds</div>
+                  <div className="font-semibold text-gray-900">
+                    Instant Booking
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Book in 60 seconds
+                  </div>
                 </div>
               </div>
             </div>

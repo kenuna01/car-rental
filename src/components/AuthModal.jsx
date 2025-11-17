@@ -1,12 +1,6 @@
-import { X, Mail, Lock, User, Phone } from 'lucide-react';
+import { X, Mail, Lock, User, Phone } from "lucide-react";
 
-interface AuthModalProps {
-  mode: 'login' | 'signup';
-  onClose: () => void;
-  onSwitchMode: () => void;
-}
-
-export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
+export function AuthModal({ mode, onClose, onSwitchMode }) {
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl max-w-md w-full p-8 relative animate-fadeIn">
@@ -18,16 +12,16 @@ export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
         </button>
 
         <h2 className="text-3xl font-bold text-gray-900 mb-2">
-          {mode === 'login' ? 'Welcome Back' : 'Create Account'}
+          {mode === "login" ? "Welcome Back" : "Create Account"}
         </h2>
         <p className="text-gray-600 mb-8">
-          {mode === 'login'
-            ? 'Sign in to access your account'
-            : 'Join us and start your journey'}
+          {mode === "login"
+            ? "Sign in to access your account"
+            : "Join us and start your journey"}
         </p>
 
         <form className="space-y-4">
-          {mode === 'signup' && (
+          {mode === "signup" && (
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
                 Full Name
@@ -57,7 +51,7 @@ export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
             </div>
           </div>
 
-          {mode === 'signup' && (
+          {mode === "signup" && (
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
                 Phone Number
@@ -87,13 +81,19 @@ export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
             </div>
           </div>
 
-          {mode === 'login' && (
+          {mode === "login" && (
             <div className="flex items-center justify-between">
               <label className="flex items-center">
-                <input type="checkbox" className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+                <input
+                  type="checkbox"
+                  className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                />
                 <span className="ml-2 text-sm text-gray-600">Remember me</span>
               </label>
-              <a href="#" className="text-sm text-blue-600 hover:text-blue-700 font-semibold">
+              <a
+                href="#"
+                className="text-sm text-blue-600 hover:text-blue-700 font-semibold"
+              >
                 Forgot password?
               </a>
             </div>
@@ -103,18 +103,20 @@ export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-all font-semibold shadow-md hover:shadow-lg"
           >
-            {mode === 'login' ? 'Sign In' : 'Create Account'}
+            {mode === "login" ? "Sign In" : "Create Account"}
           </button>
         </form>
 
         <div className="mt-6 text-center">
           <p className="text-gray-600">
-            {mode === 'login' ? "Don't have an account? " : "Already have an account? "}
+            {mode === "login"
+              ? "Don't have an account? "
+              : "Already have an account? "}
             <button
               onClick={onSwitchMode}
               className="text-blue-600 hover:text-blue-700 font-semibold"
             >
-              {mode === 'login' ? 'Sign Up' : 'Sign In'}
+              {mode === "login" ? "Sign Up" : "Sign In"}
             </button>
           </p>
         </div>
@@ -125,19 +127,33 @@ export function AuthModal({ mode, onClose, onSwitchMode }: AuthModalProps) {
               <div className="w-full border-t border-gray-200"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-white text-gray-600">Or continue with</span>
+              <span className="px-4 bg-white text-gray-600">
+                Or continue with
+              </span>
             </div>
           </div>
 
           <div className="mt-6 grid grid-cols-3 gap-3">
             <button className="flex items-center justify-center px-4 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5" />
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google"
+                className="w-5 h-5"
+              />
             </button>
             <button className="flex items-center justify-center px-4 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src="https://www.facebook.com/favicon.ico" alt="Facebook" className="w-5 h-5" />
+              <img
+                src="https://www.facebook.com/favicon.ico"
+                alt="Facebook"
+                className="w-5 h-5"
+              />
             </button>
             <button className="flex items-center justify-center px-4 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src="https://www.apple.com/favicon.ico" alt="Apple" className="w-5 h-5" />
+              <img
+                src="https://www.apple.com/favicon.ico"
+                alt="Apple"
+                className="w-5 h-5"
+              />
             </button>
           </div>
         </div>

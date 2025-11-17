@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Clock, Search } from 'lucide-react';
+import { MapPin, Calendar, Clock, Search } from "lucide-react";
 
 export function SearchBar() {
   return (
